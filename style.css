@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #e5e5e5;
+    font-family: "Times New Roman", serif;
+    color: #172b45;
+}
+
+.page {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 25px;
+    background: #fffdf5;
+    border: 1px solid #aaa;
+}
+
+header {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+header img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    margin-bottom:5px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border: 3px double #172b45;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+header h2 {
+    margin: 4px 0;
+    font-size: 23px;
+}
+
+header p {
+    margin: 3px 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.department {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.department h3 {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #7c8997;
+    padding: 7px 4px;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.timetable thead th {
+    background: #edf0f0;
+    height: 65px;
+}
+
+.timetable tbody th {
+    width: 10%;
+    background: #f1efe5;
+    font-weight: bold;
+}
+
+.timetable td {
+    height: 70px;
+}
+
+.break-head {
+    width: 6%;
+}
+
+.lunch {
+    background: #fffdf5;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+.blue {
+    background: #b9cbd9;
+    font-weight: bold;
+}
+
+.gray {
+    background: #e0dfd5;
+}
+
+.sec {
+    background: #b8b8ae;
+    font-weight: bold;
+}
+
+.paper-title {
+    font-size: 17px;
+    margin: 22px 0 8px;
+}
+
+.teachers th,
+.teachers td {
+    border: 1px solid #888;
+    text-align: left;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.teachers th {
+    background: #e8e8df;
+}
+
+.signature {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+
+    .page {
+        padding: 5px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    header p {
+        font-size: 11px;
+    }
+
+    .department h3 {
+        font-size: 11px;
+    }
+
+    th, td {
+        font-size: 8px;
+        padding: 3px 1px;
+    }
+
+    .timetable td {
+        height: 55px;
+    }
+
+    .teachers th,
+    .teachers td {
+        font-size: 8px;
+        padding: 3px 1px;
+    }
+}
